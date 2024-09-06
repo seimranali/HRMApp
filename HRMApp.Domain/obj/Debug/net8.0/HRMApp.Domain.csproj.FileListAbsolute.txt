@@ -1,0 +1,11 @@
+D:\HRMS Project\HRMApp\HRMApp.Domain\bin\Debug\net8.0\HRMApp.Domain.deps.json
+D:\HRMS Project\HRMApp\HRMApp.Domain\bin\Debug\net8.0\HRMApp.Domain.dll
+D:\HRMS Project\HRMApp\HRMApp.Domain\bin\Debug\net8.0\HRMApp.Domain.pdb
+D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.AssemblyInfoInputs.cache
+D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.AssemblyInfo.cs
+D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.csproj.CoreCompileInputs.cache
+D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.dll
+D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\refint\HRMApp.Domain.dll
+D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.pdb
+D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\ref\HRMApp.Domain.dll

@@ -1,0 +1,15 @@
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\bin\Debug\net8.0\HRMApp.Infrastructure.deps.json
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\bin\Debug\net8.0\HRMApp.Infrastructure.dll
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\bin\Debug\net8.0\HRMApp.Infrastructure.pdb
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\bin\Debug\net8.0\HRMApp.Domain.dll
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\bin\Debug\net8.0\HRMApp.Domain.pdb
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\obj\Debug\net8.0\HRMApp.Infrastructure.csproj.AssemblyReference.cache
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\obj\Debug\net8.0\HRMApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\obj\Debug\net8.0\HRMApp.Infrastructure.AssemblyInfoInputs.cache
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\obj\Debug\net8.0\HRMApp.Infrastructure.AssemblyInfo.cs
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\obj\Debug\net8.0\HRMApp.Infrastructure.csproj.CoreCompileInputs.cache
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\obj\Debug\net8.0\HRMApp.I.1EBE8856.Up2Date
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\obj\Debug\net8.0\HRMApp.Infrastructure.dll
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\obj\Debug\net8.0\refint\HRMApp.Infrastructure.dll
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\obj\Debug\net8.0\HRMApp.Infrastructure.pdb
+D:\HRMS Project\HRMApp\HRMApp.Infrastructure\obj\Debug\net8.0\ref\HRMApp.Infrastructure.dll

@@ -1,0 +1,264 @@
+﻿@page "/businesstype"
+@page "/businesstype/edit/{id:int}"
+@inject IMediator mediatR
+@inject DialogService dialogService
+@implements IDisposable
+
+
+<RadzenContentContainer>
+
+    <RadzenRow class="mb-3">
+        <RadzenColumn Size="4">
+            <RadzenText TextStyle="TextStyle.DisplayH5" TagName="TagName.H5" Text="Business Type">
+
+            </RadzenText>
+        </RadzenColumn>
+        <RadzenColumn Size="8">
+
+            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" AlignItems="AlignItems.Center">
+
+                <RadzenBreadCrumb>
+                    <Template Context="item">
+                        <RadzenBadge IsPill="true" Text="@item.Text"></RadzenBadge>
+                    </Template>
+                    <ChildContent>
+                        <RadzenBreadCrumbItem Text="Setup"></RadzenBreadCrumbItem>
+                        <RadzenBreadCrumbItem Icon="add" Text="Business Type"></RadzenBreadCrumbItem>
+                    </ChildContent>
+
+                </RadzenBreadCrumb>
+
+            </RadzenStack>
+
+        </RadzenColumn>
+    </RadzenRow>
+
+    <RadzenCard>
+
+
+        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" AlignItems="AlignItems.Center" Gap="0.10rem" class="mb-2">
+            <RadzenButton ButtonStyle="ButtonStyle.Primary" Variant="Variant.Flat" Shade="Shade.Light" Text="Add New" Click="@(async ()=> await OpenSideDialog(null))">
+
+            </RadzenButton>
+        </RadzenStack>
+
+        <RadzenDataGrid @ref=@grid Data="Data" LoadData="LoadData" IsLoading="IsLoadingGrid" Count="Count" PageSize="PageSize" AllowFiltering="true" AllowSorting="true" ShowPagingSummary="true" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive">
+
+            <Columns>
+                <RadzenDataGridColumn TItem="BusinessType" Property="BusinessTypeName" Title="Business Type">
+
+                </RadzenDataGridColumn>
+                <RadzenDataGridColumn TItem="BusinessType" Property="BusinessTypeDescription" Title="Business Description">
+
+                </RadzenDataGridColumn>
+
+                <RadzenDataGridColumn TItem="BusinessType" Property="BusinessTypeID" Title="Action">
+                    <Template Context="item">
+
+                        <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" AlignItems="AlignItems.Center" Gap="0.10rem">
+
+                            <RadzenButton Icon="edit" ButtonStyle="ButtonStyle.Warning" Shade="Shade.Lighter" Variant="Variant.Flat" Size="ButtonSize.Small" Click="@(async ()=> await OpenSideDialog(item.BusinessTypeID))"></RadzenButton>
+                            <RadzenButton Icon="delete" ButtonStyle="ButtonStyle.Danger" Shade="Shade.Lighter" Variant="Variant.Flat" Size="ButtonSize.Small" Click="@(async ()=> await OnDelete(item.BusinessTypeID))"></RadzenButton>
+                        </RadzenStack>
+
+                    </Template>
+                </RadzenDataGridColumn>
+
+            </Columns>
+
+        </RadzenDataGrid>
+
+    </RadzenCard>
+
+</RadzenContentContainer>
+
+
+
+@code {
+
+
+
+    [Parameter]
+    public int? id { get; set; }
+
+    bool IsLoadingPage;
+    bool IsLoadingGrid;
+    int Count;
+    int PageSize=10;
+
+
+    RadzenDataGrid<BusinessType> grid;
+    List<BusinessType> Data = new List<BusinessType>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        IsLoadingPage = true;
+        try
+        {
+            dialogService.OnSideClose += Close;
+
+            await LoadData(new LoadDataArgs() { Skip = 0, Top = PageSize });
+            await InvokeAsync(StateHasChanged);
+
+
+        }
+        catch (Exception ex)
+        {
+
+            throw ex;
+        }
+        finally
+        {
+
+            IsLoadingPage = false;
+        }
+    }
+
+
+    public async Task LoadData(LoadDataArgs args)
+    {
+        IsLoadingGrid = true;
+        IQueryable<BusinessType> query;
+        try
+        {
+            await Task.Yield();
+
+
+
+            GenericResult<IQueryable<BusinessType>> Result = await mediatR.Send(new GetAllBusinessTypeQuery() { });
+
+            if (Result is not null)
+            {
+
+                if (Result.Status)
+                {
+
+                    query = Result.Data;
+
+                    if (args is not null)
+                    {
+
+                        if (!string.IsNullOrEmpty(args.Filter))
+                            query = query.Where(args.Filter);
+
+
+                        if (!string.IsNullOrEmpty(args.OrderBy))
+                            query = query.OrderBy(args.OrderBy);
+                        else
+                            query = query.OrderByDescending(o => o.BusinessTypeID);
+
+
+
+                        Count = query.Count();
+
+
+                        if (args.Skip.HasValue && args.Top.HasValue)
+                            query = query.Skip(args.Skip.Value).Take(args.Top.Value);
+                        else
+                            query = query.Skip(0).Take(PageSize);
+
+                    }
+
+
+                    Data = await query.ToListAsync();
+
+
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+
+            throw ex;
+        }
+        finally
+        {
+            IsLoadingGrid = false;
+        }
+
+    }
+
+
+    private async Task OnDelete(int id)
+    {
+
+        try
+        {
+
+            bool? flg = await dialogService.Confirm("Are you sure!?, You want to delete this record.",
+    "Confirm",
+    new ConfirmOptions { OkButtonText = "Yes", CancelButtonText = "No" });
+
+
+            if (flg.HasValue)
+            {
+                if (flg.Value)
+                {
+
+                    var Result = await mediatR.Send(new DeleteBusinessTypeCommand() { Id = id });
+
+                    if (Result is not null)
+                    {
+                        if (Result.Status)
+                        {
+                            await dialogService.Alert(Result.Message, "Inform");
+                            await grid.Reload();
+                        }
+                    }
+
+
+                }
+            }
+
+
+        }
+        catch (Exception ex)
+        {
+
+            throw ex;
+        }
+    }
+
+
+    public async Task OpenSideDialog(int? id)
+    {
+        try
+        {
+
+            if (id.HasValue)
+            {
+                await dialogService.OpenSideAsync<BusinessTypePage>("Edit Business Type",
+                new Dictionary<string, object>() { { "id", id } }, new SideDialogOptions() { Position = DialogPosition.Right, Height = "97%", Style = "right:15px !important;top:15px !important;bottom:10px !important;" });
+            }
+            else
+            {
+                await dialogService.OpenSideAsync<BusinessTypePage>("Create Business Type",
+                new Dictionary<string, object>() { { "id", null } }, new SideDialogOptions() { Position = DialogPosition.Right, Height = "97%", Style = "right:15px !important;top:15px !important;bottom:10px !important;" });
+            }
+
+        }
+        catch (Exception ex)
+        {
+
+            throw ex;
+        }
+    }
+
+
+    public async void Close(dynamic result)
+    {
+
+        if (result is BusinessType)
+            await grid.Reload();
+
+    }
+
+    public void Dispose()
+    {
+
+        if (dialogService is not null)
+            dialogService.Dispose();
+    }
+
+}

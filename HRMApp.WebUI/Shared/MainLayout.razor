@@ -1,0 +1,61 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>HRMApp.WebUI</PageTitle>
+
+
+<RadzenComponents />
+
+<RadzenLayout>
+
+    <!--Header-->
+    <RadzenHeader>
+        <RadzenRow>
+            <RadzenColumn Size="4">
+                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" AlignItems="AlignItems.Center" Gap="0.10rem">
+                    <RadzenSidebarToggle Click="@(() => expandedSidebar = !expandedSidebar)">
+
+                    </RadzenSidebarToggle>
+                    <RadzenLabel>HRM</RadzenLabel>
+                </RadzenStack>
+            </RadzenColumn>
+            <RadzenColumn Size="8">
+
+            </RadzenColumn>
+        </RadzenRow>
+    </RadzenHeader>
+
+    <!-- Sidebar -->
+    <RadzenSidebar @bind-Expanded="expandedSidebar">
+        <RadzenPanelMenu>
+            <ChildContent>
+                <RadzenPanelMenuItem Text="Setup" Icon="settings">
+                    <ChildContent>
+                        <RadzenPanelMenuItem Text="Business Type" Path="businesstype" />
+                    </ChildContent>
+                </RadzenPanelMenuItem>
+            </ChildContent>
+        </RadzenPanelMenu>
+    </RadzenSidebar>
+
+    <!--Body-->
+
+    <RadzenBody>
+        <main class="p-3">
+            @Body
+        </main>
+    </RadzenBody>
+
+    <!--Footer-->
+    <RadzenFooter>
+
+    </RadzenFooter>
+
+</RadzenLayout>
+
+
+@code {
+
+
+    bool expandedSidebar;
+
+}

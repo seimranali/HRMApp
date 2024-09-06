@@ -1,0 +1,156 @@
+﻿@inject IMediator mediatR
+@inject DialogService dialogService
+
+<RadzenAlert AlertStyle="AlertStyle.Success" Variant="Variant.Flat" Shade="Shade.Lighter" Visible="IsSuccess">
+    @message
+</RadzenAlert>
+
+<RadzenAlert AlertStyle="AlertStyle.Danger" Variant="Variant.Flat" Shade="Shade.Lighter" Visible="IsError">
+    @message
+</RadzenAlert>
+
+<RadzenTemplateForm Data="model" TItem="BusinessType" Submit="OnCreate">
+
+    <RadzenFormField Text="Business Type" class="w-100">
+        <ChildContent>
+            <RadzenTextBox Name="BusinessTypeName" @bind-Value="model.BusinessTypeName">
+
+            </RadzenTextBox>
+        </ChildContent>
+        <Helper>
+            <RadzenRequiredValidator Component="BusinessTypeName" Text="This field is requied." Popup="true" Style="z-index:100;display:block;">
+
+            </RadzenRequiredValidator>
+        </Helper>
+    </RadzenFormField>
+
+    <RadzenFormField Text="Business Type Description" class="w-100">
+        <ChildContent>
+            <RadzenTextArea Name="BusinessTypeDescription" @bind-Value="model.BusinessTypeDescription" Rows="3" Cols="68">
+
+            </RadzenTextArea>
+        </ChildContent>
+    </RadzenFormField>
+
+
+    <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" AlignItems="AlignItems.Center" Gap="0.10rem" class="mt-3">
+        <RadzenButton ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Primary" Variant="Variant.Flat" Shade="Shade.Light" Text="@(id.HasValue ? "Update":"Create")" Disabled="IsBusy" IsBusy="IsBusy" BusyText="@(id.HasValue ? "Update...":"Create...")"></RadzenButton>
+        <RadzenButton ButtonType="ButtonType.Button" ButtonStyle="ButtonStyle.Light" Variant="Variant.Flat" Shade="Shade.Light" Text="Cancel" Disabled="IsBusy" Click="@(()=>  dialogService.CloseSide(null))"></RadzenButton>
+    </RadzenStack>
+
+</RadzenTemplateForm>
+
+
+
+
+@code {
+
+
+    [Parameter]
+    public int? id { get; set; }
+
+
+    bool IsLoadingPage;
+    bool IsBusy;
+    bool IsSuccess;
+    bool IsError;
+    string message;
+
+
+    BusinessType model = new BusinessType();
+
+    protected override async Task OnInitializedAsync()
+    {
+        IsLoadingPage = true;
+        try
+        {
+
+            if (id.HasValue)
+            {
+
+                var Result = await mediatR.Send(new EditBusinessTypeQuery { Id = id.Value });
+
+                if (Result is not null)
+                {
+                    if (Result.Status)
+                    {
+
+                        if (Result.Data is not null)
+                        {
+                            model = Result.Data;
+                            await InvokeAsync(StateHasChanged);
+                        }
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+
+            throw ex;
+        }
+        finally
+        {
+            IsLoadingPage = false;
+        }
+
+    }
+
+    private async Task OnCreate()
+    {
+        IsBusy = true;
+        IsSuccess = false;
+        IsError = false;
+
+        GenericResult<BusinessType> Result = new();
+        try
+        {
+
+            await Task.Yield();
+
+
+            if (id.HasValue)
+                Result = await mediatR.Send(new UpdateBusinessTypeCommand() { BusinessType = model });
+            else
+                Result = await mediatR.Send(new CreateBusinessTypeCommand() { BusinessType = model });
+
+
+            if (Result is not null)
+            {
+                if (Result.Status)
+                {
+
+                    IsSuccess = true;
+                    message = Result.Message;
+                    await Task.Delay(500);
+                    dialogService.CloseSide(Result.Data);
+
+                }
+                else
+                {
+                    IsError = true;
+                    message = Result.Message;
+                }
+            }
+            else
+            {
+
+                IsError = true;
+                message = "Data is not provided";
+            }
+        }
+        catch (Exception ex)
+        {
+
+            throw ex;
+        }
+
+        finally
+        {
+
+            IsBusy = false;
+        }
+
+    }
+
+}
