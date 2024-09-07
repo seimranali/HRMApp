@@ -3336,11 +3336,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\HRMApp.WebUI.csproj",
+      "projectUniqueName": "D:\\HRMApp\\HRMApp.WebUI\\HRMApp.WebUI.csproj",
       "projectName": "HRMApp.WebUI",
-      "projectPath": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\HRMApp.WebUI.csproj",
+      "projectPath": "D:\\HRMApp\\HRMApp.WebUI\\HRMApp.WebUI.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\obj\\",
+      "outputPath": "D:\\HRMApp\\HRMApp.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3363,8 +3363,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\HRMS Project\\HRMApp\\HRMApp.Application\\HRMApp.Application.csproj": {
-              "projectPath": "D:\\HRMS Project\\HRMApp\\HRMApp.Application\\HRMApp.Application.csproj"
+            "D:\\HRMApp\\HRMApp.Application\\HRMApp.Application.csproj": {
+              "projectPath": "D:\\HRMApp\\HRMApp.Application\\HRMApp.Application.csproj"
             }
           }
         }

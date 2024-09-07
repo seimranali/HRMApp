@@ -2851,11 +2851,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HRMS Project\\HRMApp\\HRMApp.Application\\HRMApp.Application.csproj",
+      "projectUniqueName": "D:\\HRMApp\\HRMApp.Application\\HRMApp.Application.csproj",
       "projectName": "HRMApp.Application",
-      "projectPath": "D:\\HRMS Project\\HRMApp\\HRMApp.Application\\HRMApp.Application.csproj",
+      "projectPath": "D:\\HRMApp\\HRMApp.Application\\HRMApp.Application.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\HRMS Project\\HRMApp\\HRMApp.Application\\obj\\",
+      "outputPath": "D:\\HRMApp\\HRMApp.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2878,8 +2878,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\HRMS Project\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj": {
-              "projectPath": "D:\\HRMS Project\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj"
+            "D:\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj": {
+              "projectPath": "D:\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj"
             }
           }
         }

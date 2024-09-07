@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HRMS Project\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj": {}
+    "D:\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\HRMS Project\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj": {
+    "D:\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HRMS Project\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj",
+        "projectUniqueName": "D:\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj",
         "projectName": "HRMApp.Domain",
-        "projectPath": "D:\\HRMS Project\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj",
+        "projectPath": "D:\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\HRMS Project\\HRMApp\\HRMApp.Domain\\obj\\",
+        "outputPath": "D:\\HRMApp\\HRMApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,14 +70,14 @@
         }
       }
     },
-    "D:\\HRMS Project\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj": {
+    "D:\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HRMS Project\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj",
+        "projectUniqueName": "D:\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj",
         "projectName": "HRMApp.Infrastructure",
-        "projectPath": "D:\\HRMS Project\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj",
+        "projectPath": "D:\\HRMApp\\HRMApp.Infrastructure\\HRMApp.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\HRMS Project\\HRMApp\\HRMApp.Infrastructure\\obj\\",
+        "outputPath": "D:\\HRMApp\\HRMApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -100,8 +100,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\HRMS Project\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj": {
-                "projectPath": "D:\\HRMS Project\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj"
+              "D:\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj": {
+                "projectPath": "D:\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj"
               }
             }
           }

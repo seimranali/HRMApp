@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HRMApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{30F16E91-3943-4E69-A5D3-AE41D030610D}|HRMApp.WebUI\\HRMApp.WebUI.csproj|d:\\hrmapp\\hrmapp.webui\\pages\\setup\\businesstypepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30F16E91-3943-4E69-A5D3-AE41D030610D}|HRMApp.WebUI\\HRMApp.WebUI.csproj|solutionrelative:hrmapp.webui\\pages\\setup\\businesstypepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30F16E91-3943-4E69-A5D3-AE41D030610D}|HRMApp.WebUI\\HRMApp.WebUI.csproj|d:\\hrmapp\\hrmapp.webui\\pages\\setup\\businesstypedetailpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30F16E91-3943-4E69-A5D3-AE41D030610D}|HRMApp.WebUI\\HRMApp.WebUI.csproj|solutionrelative:hrmapp.webui\\pages\\setup\\businesstypedetailpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAF2A92F-5038-4B04-A487-DF2350A5D63A}|HRMApp.Application\\HRMApp.Application.csproj|d:\\hrmapp\\hrmapp.application\\businesstyperequest\\queries\\getallbusinesstypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAF2A92F-5038-4B04-A487-DF2350A5D63A}|HRMApp.Application\\HRMApp.Application.csproj|solutionrelative:hrmapp.application\\businesstyperequest\\queries\\getallbusinesstypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAF2A92F-5038-4B04-A487-DF2350A5D63A}|HRMApp.Application\\HRMApp.Application.csproj|d:\\hrmapp\\hrmapp.application\\businesstyperequest\\queries\\editbusinesstypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAF2A92F-5038-4B04-A487-DF2350A5D63A}|HRMApp.Application\\HRMApp.Application.csproj|solutionrelative:hrmapp.application\\businesstyperequest\\queries\\editbusinesstypequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BusinessTypePage.razor",
+              "DocumentMoniker": "D:\\HRMApp\\HRMApp.WebUI\\Pages\\Setup\\BusinessTypePage.razor",
+              "RelativeDocumentMoniker": "HRMApp.WebUI\\Pages\\Setup\\BusinessTypePage.razor",
+              "ToolTip": "D:\\HRMApp\\HRMApp.WebUI\\Pages\\Setup\\BusinessTypePage.razor",
+              "RelativeToolTip": "HRMApp.WebUI\\Pages\\Setup\\BusinessTypePage.razor",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAiwIAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-07T18:42:08.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BusinessTypeDetailPage.razor",
+              "DocumentMoniker": "D:\\HRMApp\\HRMApp.WebUI\\Pages\\Setup\\BusinessTypeDetailPage.razor",
+              "RelativeDocumentMoniker": "HRMApp.WebUI\\Pages\\Setup\\BusinessTypeDetailPage.razor",
+              "ToolTip": "D:\\HRMApp\\HRMApp.WebUI\\Pages\\Setup\\BusinessTypeDetailPage.razor",
+              "RelativeToolTip": "HRMApp.WebUI\\Pages\\Setup\\BusinessTypeDetailPage.razor",
+              "ViewState": "AgIAANsAAAAAAAAAAAAAwP4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-07T18:40:43.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetAllBusinessTypeQuery.cs",
+              "DocumentMoniker": "D:\\HRMApp\\HRMApp.Application\\BusinessTypeRequest\\Queries\\GetAllBusinessTypeQuery.cs",
+              "RelativeDocumentMoniker": "HRMApp.Application\\BusinessTypeRequest\\Queries\\GetAllBusinessTypeQuery.cs",
+              "ToolTip": "D:\\HRMApp\\HRMApp.Application\\BusinessTypeRequest\\Queries\\GetAllBusinessTypeQuery.cs",
+              "RelativeToolTip": "HRMApp.Application\\BusinessTypeRequest\\Queries\\GetAllBusinessTypeQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T18:39:26.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditBusinessTypeQuery.cs",
+              "DocumentMoniker": "D:\\HRMApp\\HRMApp.Application\\BusinessTypeRequest\\Queries\\EditBusinessTypeQuery.cs",
+              "RelativeDocumentMoniker": "HRMApp.Application\\BusinessTypeRequest\\Queries\\EditBusinessTypeQuery.cs",
+              "ToolTip": "D:\\HRMApp\\HRMApp.Application\\BusinessTypeRequest\\Queries\\EditBusinessTypeQuery.cs",
+              "RelativeToolTip": "HRMApp.Application\\BusinessTypeRequest\\Queries\\EditBusinessTypeQuery.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T18:37:41.596Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

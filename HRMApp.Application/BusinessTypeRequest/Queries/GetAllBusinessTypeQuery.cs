@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace HRMApp.Application.BusinessTypeRequest.Commands
 {
-    public class GetAllBusinessTypeQuery : IRequest<GenericResult<IQueryable<BusinessType>>>
+    public class GetAllBusinessTypeQuery : IRequest<IQueryable<BusinessType>>
     {
 
         //Create Nasted Class
 
-        private class GetAllBusinessTypeQueryHandler : IRequestHandler<GetAllBusinessTypeQuery, GenericResult<IQueryable<BusinessType>>>
+        private class GetAllBusinessTypeQueryHandler : IRequestHandler<GetAllBusinessTypeQuery, IQueryable<BusinessType>>
         {
 
             private IBusinessTypeRepository _businessType;
@@ -23,47 +23,27 @@ namespace HRMApp.Application.BusinessTypeRequest.Commands
             {
                 this._businessType = businessType;
             }
-            public async Task<GenericResult<IQueryable<BusinessType>>> Handle(GetAllBusinessTypeQuery request, CancellationToken cancellationToken)
+            public async Task<IQueryable<BusinessType>> Handle(GetAllBusinessTypeQuery request, CancellationToken cancellationToken)
             {
 
-                GenericResult<IQueryable<BusinessType>> genericResult = new GenericResult<IQueryable<BusinessType>>();
+
 
                 try
                 {
                     if (request is null)
                     {
-
-                        genericResult.Status = false;
-                        genericResult.Message = "Data is not provided";
-                        return genericResult;
+                        return null;
                     }
 
 
-                    var query = this._businessType.GetAll();
-
-                    if (query is not null)
-                    {
-
-                        genericResult.Data = query;
-                        genericResult.Status = true;
-                        genericResult.Message = $"Business types has been found successfully.";
+                    return this._businessType.GetAll();
 
 
-                    }
-                    else
-                    {
-                        genericResult.Status = false;
-                        genericResult.Message = "Data is not provided";
-                    }
-
-                    return genericResult;
 
                 }
                 catch (Exception ex)
                 {
-                    genericResult.Status = false;
-                    genericResult.Message = ex.Message;
-                    return genericResult;
+                    throw ex;
                 }
             }
         }

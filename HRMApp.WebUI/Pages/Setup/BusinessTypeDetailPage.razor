@@ -124,48 +124,38 @@
         {
             await Task.Yield();
 
+            
+            query = await mediatR.Send(new GetAllBusinessTypeQuery() { });
 
-
-            GenericResult<IQueryable<BusinessType>> Result = await mediatR.Send(new GetAllBusinessTypeQuery() { });
-
-            if (Result is not null)
+            if (args is not null)
             {
 
-                if (Result.Status)
-                {
-
-                    query = Result.Data;
-
-                    if (args is not null)
-                    {
-
-                        if (!string.IsNullOrEmpty(args.Filter))
-                            query = query.Where(args.Filter);
+                if (!string.IsNullOrEmpty(args.Filter))
+                    query = query.Where(args.Filter);
 
 
-                        if (!string.IsNullOrEmpty(args.OrderBy))
-                            query = query.OrderBy(args.OrderBy);
-                        else
-                            query = query.OrderByDescending(o => o.BusinessTypeID);
+                if (!string.IsNullOrEmpty(args.OrderBy))
+                    query = query.OrderBy(args.OrderBy);
+                else
+                    query = query.OrderByDescending(o => o.BusinessTypeID);
 
 
 
-                        Count = query.Count();
+                Count = query.Count();
 
 
-                        if (args.Skip.HasValue && args.Top.HasValue)
-                            query = query.Skip(args.Skip.Value).Take(args.Top.Value);
-                        else
-                            query = query.Skip(0).Take(PageSize);
+                if (args.Skip.HasValue && args.Top.HasValue)
+                    query = query.Skip(args.Skip.Value).Take(args.Top.Value);
+                else
+                    query = query.Skip(0).Take(PageSize);
 
-                    }
-
-
-                    Data = await query.ToListAsync();
-
-
-                }
             }
+
+
+            Data = await query.ToListAsync();
+
+
+
         }
         catch (Exception ex)
         {

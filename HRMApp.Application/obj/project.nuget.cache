@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wA/hgwnTU34=",
+  "dgSpecHash": "LwXQCohhZCg=",
   "success": true,
-  "projectFilePath": "D:\\HRMS Project\\HRMApp\\HRMApp.Application\\HRMApp.Application.csproj",
+  "projectFilePath": "D:\\HRMApp\\HRMApp.Application\\HRMApp.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

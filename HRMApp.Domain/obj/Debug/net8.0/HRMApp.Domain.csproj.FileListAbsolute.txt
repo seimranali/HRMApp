@@ -9,3 +9,15 @@ D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.dll
 D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\refint\HRMApp.Domain.dll
 D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.pdb
 D:\HRMS Project\HRMApp\HRMApp.Domain\obj\Debug\net8.0\ref\HRMApp.Domain.dll
+D:\HRMApp\HRMApp.Domain\bin\Debug\net8.0\HRMApp.Domain.deps.json
+D:\HRMApp\HRMApp.Domain\bin\Debug\net8.0\HRMApp.Domain.dll
+D:\HRMApp\HRMApp.Domain\bin\Debug\net8.0\HRMApp.Domain.pdb
+D:\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.AssemblyInfoInputs.cache
+D:\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.AssemblyInfo.cs
+D:\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.csproj.CoreCompileInputs.cache
+D:\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.sourcelink.json
+D:\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.dll
+D:\HRMApp\HRMApp.Domain\obj\Debug\net8.0\refint\HRMApp.Domain.dll
+D:\HRMApp\HRMApp.Domain\obj\Debug\net8.0\HRMApp.Domain.pdb
+D:\HRMApp\HRMApp.Domain\obj\Debug\net8.0\ref\HRMApp.Domain.dll

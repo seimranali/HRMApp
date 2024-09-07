@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HRMS Project\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj",
+      "projectUniqueName": "D:\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj",
       "projectName": "HRMApp.Domain",
-      "projectPath": "D:\\HRMS Project\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj",
+      "projectPath": "D:\\HRMApp\\HRMApp.Domain\\HRMApp.Domain.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\HRMS Project\\HRMApp\\HRMApp.Domain\\obj\\",
+      "outputPath": "D:\\HRMApp\\HRMApp.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

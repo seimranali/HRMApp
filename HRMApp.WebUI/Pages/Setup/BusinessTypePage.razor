@@ -67,21 +67,8 @@
 
             if (id.HasValue)
             {
-
-                var Result = await mediatR.Send(new EditBusinessTypeQuery { Id = id.Value });
-
-                if (Result is not null)
-                {
-                    if (Result.Status)
-                    {
-
-                        if (Result.Data is not null)
-                        {
-                            model = Result.Data;
-                            await InvokeAsync(StateHasChanged);
-                        }
-                    }
-                }
+                model = await mediatR.Send(new EditBusinessTypeQuery { Id = id.Value });
+                await InvokeAsync(StateHasChanged);
             }
         }
         catch (Exception ex)
@@ -122,6 +109,7 @@
 
                     IsSuccess = true;
                     message = Result.Message;
+                    await InvokeAsync(StateHasChanged);
                     await Task.Delay(500);
                     dialogService.CloseSide(Result.Data);
 
@@ -130,6 +118,7 @@
                 {
                     IsError = true;
                     message = Result.Message;
+                    await InvokeAsync(StateHasChanged);
                 }
             }
             else
@@ -137,6 +126,7 @@
 
                 IsError = true;
                 message = "Data is not provided";
+                await InvokeAsync(StateHasChanged);
             }
         }
         catch (Exception ex)

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rGUHPnwn/HuN5pUHpnC84YHvUg9NgareGG7uiMNAML4=",
+  "Hash": "eCZZ9L+t7OW0Oe2CJ7FBDBVJ3KHktQp/m1xtRRzOyRU=",
   "Source": "HRMApp.WebUI",
   "BasePath": "_content/HRMApp.WebUI",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "HRMApp.WebUI\\wwwroot",
       "Source": "HRMApp.WebUI",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "Pattern": "**"
     }
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\radzen.blazor\\5.1.9\\staticwebassets\\Radzen.Blazor.js"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HRMApp.WebUI.styles.css",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HRMApp.WebUI.styles.css",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "HRMApp.WebUI.styles.css",
       "AssetKind": "All",
@@ -698,13 +698,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HRMApp.WebUI.styles.css"
+      "OriginalItemSpec": "D:\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\HRMApp.WebUI.styles.css"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HRMApp.WebUI.bundle.scp.css",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HRMApp.WebUI.bundle.scp.css",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "HRMApp.WebUI.bundle.scp.css",
       "AssetKind": "All",
@@ -717,13 +717,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HRMApp.WebUI.bundle.scp.css"
+      "OriginalItemSpec": "D:\\HRMApp\\HRMApp.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HRMApp.WebUI.bundle.scp.css"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\site.css",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\css\\site.css",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\favicon.png",
+      "Identity": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\favicon.png",
       "SourceId": "HRMApp.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\HRMS Project\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
+      "ContentRoot": "D:\\HRMApp\\HRMApp.WebUI\\wwwroot\\",
       "BasePath": "_content/HRMApp.WebUI",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
